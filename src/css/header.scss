@@ -1,0 +1,53 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+
+  &-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-left {
+    display: flex;
+    column-gap: 68px;
+    align-items: center;
+  }
+
+  &-menu {
+    display: flex;
+    column-gap: 24px;
+    list-style-type: none;
+  }
+
+  &-right {
+    display: flex;
+    column-gap: 21px;
+  }
+
+  &-icon {
+    color: white;
+    transition: .5s;
+    &:hover{
+      color: blue;
+      transition: .5s;
+    }
+  }
+
+
+  &-link{
+    font-family: Roboto sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    transition: .5s;
+    &:hover{
+      color: red;
+      transition: .5s;
+    }
+  }
+
+}

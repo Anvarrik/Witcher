@@ -1,0 +1,152 @@
+.first-screen{
+  padding: 187px 0 99px;
+  background: #141218 url("../images/background.png") top right/contain no-repeat;
+
+  &__content{
+    width: calc(100% - 160px);
+    position: relative;
+
+  }
+
+
+
+  &__circle {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #ff000050;
+    position: absolute;
+    top: 121px;
+    right: 0;
+
+  }
+
+  &__circle::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+  }
+
+  &__circle::after {
+    content: '';
+    clip-path: polygon(0 50%, 0% 100%, 39% 75%);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -5px;
+    left: 50px;
+    background-color: white;
+  }
+
+  &__year{
+    font-family: Roboto sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 16px;
+
+    color: #FFFFFF;
+  }
+  &-stars{
+    display: flex;
+    list-style-type: none;
+    column-gap: 4px;
+  }
+
+
+  &-description{
+    font-family: Roboto sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 10px 0 40px;
+    color: #FFFFFF;
+  }
+
+  &__rate{
+    display: flex;
+    column-gap: 9px;
+    margin-bottom: 12.5px;
+  }
+  &-btn{
+    width: 260px;
+    height: 60px;
+    background: #9D2929;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: Roboto sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+  }
+  &-title{
+    font-family: 'Estonia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 89px;
+
+    color: #FFFFFF;
+  }
+  &-number{
+    color: white;
+  }
+  &__carousel{
+    display: flex;
+    column-gap: 30px;
+    margin-top: 85px;
+  }
+
+
+  &__series{
+    width: 164px;
+    height: 113px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    &.first{
+      background: url("../images/card-image.png");
+    }
+    &.second{
+      background: url("../images/card-image (1).png");
+    }
+  }
+  &__series-number {
+    font-family: Roboto sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: white;
+    padding: 0 0 3px 13px;
+  }
+  &__series-name {
+    font-family: Roboto sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    padding: 0 0 13px 13px;
+
+  }
+
+
+
+}
